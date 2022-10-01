@@ -135,8 +135,8 @@ For your PR to count it must be:
 
 ## Contributors
 
-<a href="https://github.com/striker-24/Demo_Hacktoberfest/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=striker-24/Demo_Hacktoberfest" />
+<a href="https://github.com/SR-Sunny-Raj/Hacktoberfest2022-Coders_and_Non-Coders/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SR-Sunny-Raj/Hacktoberfest2022-Coders_and_Non-Coders" />
 </a>
 
 ---
