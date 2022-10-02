@@ -1,0 +1,84 @@
+body
+{
+  margin: 0px;
+  padding-right: 0px;
+  background-color: antiquewhite;
+}
+td,th
+{
+  border: 1px solid black;
+  text-align: left;
+  padding: 15px;
+}
+p {
+  margin: 50px;
+  font-family: "Recursive", sans-serif;
+  font-size: 40px;
+}
+.container {
+  display: flex;
+  justify-content:space-evenly;
+  padding-right: 140px;
+}
+.heading
+{
+  display:flex;
+  justify-content: center;
+}
+img {
+  height: 260px;
+}
+p {
+  font-size: 2rem;
+}
+.cont {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.btn1 {
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.btn2 {
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.btn3
+{
+  cursor: pointer;
+  border-radius: 15px;
+  border-color: grey;
+  color: white;
+  background-color: grey;
+  padding-bottom: 2px;
+}
+.btn1:hover
+{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.btn2:hover
+{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.btn3:hover
+{
+  font-weight: bold;
+}
+.last
+{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+footer {
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  padding-top: 100px;
+}

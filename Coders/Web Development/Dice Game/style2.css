@@ -1,0 +1,21 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: antiquewhite;
+}
+.container {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  align-items: center;
+}
+.btn
+{
+  border-radius: 15px;
+  text-align: center;
+  text-decoration:solid;
+}
+.btn:hover
+{
+  font-weight: bold;
+  background-color: grey;
+  color: white;
+}
