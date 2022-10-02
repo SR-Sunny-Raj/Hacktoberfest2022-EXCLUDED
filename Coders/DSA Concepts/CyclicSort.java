@@ -1,4 +1,4 @@
-public class cyclicSort {
+public class CyclicSort {
     public static void cyclic(int[] arr) {
         int i=0;
         while (i<arr.length-1) {
