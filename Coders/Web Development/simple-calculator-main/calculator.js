@@ -20,3 +20,7 @@ function clr(){
 function dlt(){
     result.value=result.value.slice(0,-1)
 }
+
+function add(num1, num2){
+    result.value=num1+num2;
+}
