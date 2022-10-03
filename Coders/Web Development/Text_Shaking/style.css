@@ -1,0 +1,76 @@
+body {
+    background: radial-gradient(
+      circle at 50% 50%,
+      #fa31ed,
+      #e144a5,
+      #c32a88,
+      #f43370,
+      #d857fc,
+      #df0da0,
+      #fc4dd0,
+      #791844
+    );
+    padding:0;
+  }
+  
+  #textbox {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: "Barrio", cursive;
+  }
+  
+  #textbox h1 {
+    margin: 0;
+    font-size: 130px;
+    letter-spacing:10px;
+    color:#fff;
+    text-align:center;
+    
+  }
+  
+  #textbox p{
+    margin: 0;
+    font-size: 70px;
+    color:#a4e8e3;
+    text-align: center;
+    
+  }
+
+  #textbox h1:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  #textbox p:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+
+  @keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+ 
