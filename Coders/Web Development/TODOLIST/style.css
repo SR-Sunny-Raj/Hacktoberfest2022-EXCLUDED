@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(220, 204, 25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 800;
+  color: rgb(8, 6, 133);
+  letter-spacing: 1px;
+  margin: 30px 0 60px 0;
+}
+
+.todo-list {
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-weight: bolder;
+  background-color: #fff;
+}
+
+.list-head {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+}
+
+.entered-list {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.add-list {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(9, 9, 9);
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.add-list.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.tasks {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.item {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #111;
+  letter-spacing: 1px;
+  padding: 0 25px 0 15px;
+  font-weight: bolder;
+}
+.item.completed p {
+  text-decoration: line-through;
+  color: #11111180;
+}
+.item-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-btn i {
+  color: rgb(15, 15, 15);
+  font-size: 18px;
+  cursor: pointer;
+}
