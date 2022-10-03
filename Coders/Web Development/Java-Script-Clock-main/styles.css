@@ -21,6 +21,24 @@ body{
 .clock{
     width: 300px;
     height: 300px;
+    background: rgba(129, 129, 185, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    -webkit-filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
+    filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    -webkit-filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
+    filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
     background-color: rgba(161, 165, 243, 0.9);
     box-shadow: 0 8px 32px 0 rgba(16, 20, 68, 0.37);
     backdrop-filter: blur( 4px );
@@ -34,7 +52,7 @@ body{
 }
 
 .clock .number{
-    --rotation:0;
+    /* --rotation:0; */
     position: absolute;
     width: 100%;
     height: 100%;
