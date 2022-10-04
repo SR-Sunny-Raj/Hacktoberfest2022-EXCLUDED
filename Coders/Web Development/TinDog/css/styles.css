@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+#title {
+    /* z-index: 1; */
+    /* position: ; */
+    color: #fff;
+    /*  #fff =white and #000 = black */
+    background-color: #ff4c68;
+}
+
+div .container-fluid {
+    padding: 3% 15% 7%;
+    /* padding-left: 7%;
+    padding-right: 7%; */
+}
+
+
+
+body {
+    font-family: 'Montserrat';
+}
+
+.h11 {
+
+    /* color: black; */
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h2 {
+
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat-black', sans-serif;
+}
+
+
+
+p {
+    color: #8f8f8f;
+}
+
+.navbar {
+    padding-bottom: 14.5rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: 'Montserrat-light', sans-serif;
+}
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Title Image  */
+.title-img {
+    width: 60%;
+    transform: rotate(0deg);
+    padding-top: 65px;
+    margin-left: 27px;
+    right: 200px;
+
+}
+
+
+/* FEATURES */
+#features {
+    position: relative;
+    text-align: center;
+    padding: 8% 15%;
+    background-color: #fff;
+    /* z-index: 1; */
+}
+
+.fas {
+    color: #ef6712;
+    margin-bottom: 1rem;
+}
+
+.fas:hover {
+    color: #ff4c68;
+    /* margin-bottom: 1rem; */
+}
+
+
+
+/* <!-- Testimonials -->  */
+#testimonials {
+    padding: 4% 15%;
+    text-align: center;
+    background-color: #ef9212;
+    color: #fff;
+}
+
+.textimonials-image {
+    width: 20%;
+    border-radius: 100%;
+    margin: 10%;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+#press {
+    text-align: center;
+    background-color: #ef9212;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 14%;
+    margin: 20px 20px 50px;
+}
+
+
+/* PRINCING */
+#pricing {
+    text-align: center;
+    padding: 100px;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+}
+
+/* media  */
+
+@media (min-width:1040px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-img {
+        position: static;
+        transform: rotate(25deg);
+    }
+}
