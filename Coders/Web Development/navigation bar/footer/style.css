@@ -1,0 +1,70 @@
+body{
+	margin:0;	
+	padding:0;
+	
+	background-image:url("1.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:0% 0%;
+	box-sizing:border-box;
+	font-family:'Poppins';sans-serif;
+}
+footer{
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	background:#111;
+}
+.main-content{
+	display:flex;
+}
+
+.main-content .box{
+	flex-basis:50%;
+	padding:10px 20px;
+}
+.box h2{
+	font-size:1.125rem;
+	font-weight:600;
+	text-transform:uppercase;
+}
+.box, .content{
+	margin:20px 0 0 0;	
+}
+
+.left  ,.content   p{
+	text-align:justify;
+}
+.left  ,.content  , .social{
+	margin:20px 0 0 0;
+}
+.left  , .content , .social a{
+	padding:0 2px;
+}
+.left .content  .social a span{
+	height:40px;
+	width:40px;
+	background:#1a1a1a;
+	line-height:40px;
+	text-align:center;
+	font-size:18px;
+	border-radius:5px;
+	transition: 0.4s;
+}
+.left .content  .social a span:hover{
+	background:#f12020;
+}
+ .content .place .span .fas{
+height:40px;
+	width:40px;
+	background:#1a1a1a;
+	line-height:40px;
+	text-align:center;
+	font-size:18px;
+	border-radius:5px;
+	transition: 0.4s;
+}
+ .content .place .span  .fas:hover{
+	background:#f12020;
+
+}
