@@ -7,6 +7,10 @@ android {
     namespace 'com.caioiox.appdiceroller'
     compileSdk 32
 
+    viewBinding {
+        enable = true
+    }
+
     defaultConfig {
         applicationId "com.caioiox.appdiceroller"
         minSdk 21
