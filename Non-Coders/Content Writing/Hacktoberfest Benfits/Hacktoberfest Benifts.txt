@@ -1,0 +1,11 @@
+Hi, my name is Abdul Rehman and my GitHub Profile link is: https://github.com/AbdulRehmanGHub
+
+Hacktoberfest is an annual event hosted by DigitalOcean that aims to encourage developers to contribute to open-source projects and give back to the community.
+
+Through this event, many developers gain the confidence to be part of the open-source community, and open-source projects and organizations benefit by getting the help to grow their projects.
+
+In this article, I'll help you understand what Hacktoberfest is, why you should participate as a maintainer of an open-source software and as a participant who wants to contribute, how you should choose a project to contribute to if you're a participant, and how to prepare your repository to be part of Hacktoberfest and receive contributions.
+
+There are many open-source projects that are looking for your support and contributions, and what a better time to do that other than Hacktoberfest! Make sure to get your list of projects ready to contribute to them and give back to the community.
+
+Thank You.
