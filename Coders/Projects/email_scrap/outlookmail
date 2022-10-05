@@ -1,0 +1,88 @@
+import imaplib
+import email
+import time
+from bs4 import BeautifulSoup
+import re
+import csv
+
+imap_server = "outlook.office365.com"
+
+
+def clean(text):
+    # clean text function
+    return "".join(c if c.isalnum() else "_" for c in text)
+
+
+imap = imaplib.IMAP4_SSL(imap_server)
+imap.login("jason.dsouza.here@gmail.com", "Hi1amJ@$on13")      # TODO replace username and password
+imap.select("INBOX")    # This line indicates that all messages in INBOX shall be read only
+
+status, messages = imap.search(None, "(UNSEEN)")  # checks inbox for unread messages
+for i in messages[0].split():
+    res, msg = imap.fetch(i, "(RFC822)")
+
+    for response in msg:
+        if isinstance(response, tuple):
+            msg = email.message_from_bytes(
+                response[1]
+            )  # email is in bytes form, converts it into a msg object
+
+            db_body = ""
+
+            # subj, from, to, date can be taken from the msg object
+            subject, encoding = decode_header(msg["Subject"])[0]
+            if isinstance(subject, bytes):
+                subject = subject.decode(encoding)
+
+            From, encoding = decode_header(msg.get("From"))[0]
+            if isinstance(From, bytes):
+                From = From.decode(encoding)
+
+            To, encoding = decode_header(msg.get("To"))[0]
+            if isinstance(To, bytes):
+                To = To.decode(encoding)
+
+            Date, encoding = decode_header(msg.get("Date"))[0]
+            if isinstance(Date, bytes):
+                Date = Date.decode(encoding)
+
+            imap.store(i, "-FLAGS", "\\SEEN")
+
+            # if the email message is multipart
+            if msg.is_multipart():
+                for part in msg.walk():
+                    content_type = part.get_content_type()
+                    content_disposition = str(part.get("content-Disposition"))
+                    try:
+                        if content_type == "text/plain":
+                            body = part.get_payload(decode=True).decode()
+                            db_body += body
+
+                    except:
+                        if "attachment" in content_disposition:
+                            db_body += "Attachment Was Here"  # Because attachments cannot be added in an access db
+                        elif content_type == "text/html":
+                            bs = BeautifulSoup(
+                                body, "html.parser"
+                            )  # in case of html in the content
+                            db_body += bs
+            else:
+                content_type = (
+                    msg.get_content_type()
+                )  # extract content type of email
+                body = msg.get_payload(decode=True).decode()  # get the email body
+                try:
+                    if content_type == "text/plain":
+                        db_body += body
+
+                except:
+                    if content_type == "text/html":
+                        bs = BeautifulSoup(body, "html.parser")
+                        db_body += bs
+
+            with open("auto_email.csv", 'a', newline="") as handle:
+                writer = csv.writer(handle)
+                writer.writerow([subject, From, To, Date, db_body])
+
+imap.close()
+imap.logout()
