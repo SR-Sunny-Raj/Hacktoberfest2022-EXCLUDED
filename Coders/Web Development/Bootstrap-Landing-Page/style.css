@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+nav{
+    background-image: linear-gradient(to right, rgb(0, 217, 255),black );
+    height: 90px;
+    /* padding: auto; */
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+nav img{
+    width: 180px;
+    height: 120px;
+}
+
+nav h1{
+    color:azure;
+    font-family: 'Times New Roman', Times, serif;
+    height: fit-content;
+}
+
+#navbarNav{
+    margin-left: 51px;
+    padding: 30px;
+}
+
+
+.nav-item{
+    font-size: 16px;
+    font-weight: 2px;
+    color: black;
+    
+}
+
+#acc{
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10%;
+    /* border-right:  1px solid grey; */
+    /* height: 80px; */
+
+}
+
+
+#acc button{
+    background-color:goldenrod;
+    width: 5rem;
+    font-size: small;
+    height: 40px;
+    padding: 10px;
+    margin-top: 4px ;
+    margin-left: 1px;
+    margin-right: 2px;
+}
+
+#acc a {
+    text-decoration: none;
+}
+
+#sea input{
+    width: 7rem;
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow img{
+    height:70vh;
+    /* border-bottom: 5px solid whitesmoke; */
+       
+}
+
+div #carouselInterval{
+    position: relative;
+}
+
+#carouselInterval p{
+    padding: 3px;
+    color: aliceblue;
+    background-color: gray;
+    text-align: center;
+}
+div .form-group{ 
+    position: absolute;
+    z-index: 9999999;
+    top: 70%;
+    left: 40%;
+    right: auto;
+    bottom: auto;
+}
+
+#location{
+    width: 30rem;
+    height: 3rem;
+    background-color: bisque;
+    
+}
+
+#btn{
+    margin-left: 100%;
+}
+
+.row{
+    padding: 20px;
+}
+
+.sec2{
+    background-image: linear-gradient(to right, wheat,gray );
+}
+
+.sec2 .card{
+    height: 70vh;
+    margin: 20px;
+    box-shadow: 12px 12px 23px ;
+    border-radius: 20px;
+}
+
+.sec2 .card img{
+    border-radius: 20px 20px 0 0 ;
+
+}
+
+.sec2 .card p{
+    font-size: 13px;
+}
+
+.sec2 .card-text{
+    text-align: justify;
+    font:1px message-box;
+}
+
+.sec3{
+    background-image: linear-gradient(to right,whitesmoke,pink );
+}
+
+.sec3 .row h5{
+    background-color: rgb(133, 102, 102);
+    text-align: center;
+    padding: 2px;
+    width: 30%;
+    height: auto;
+}
+
+.sec3 .card{
+    border-radius: 30px;
+}
+
+.sec3 .card img{
+    height: 20rem;
+    width: auto;
+    border-radius: 30px ;
+    
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+
+footer{
+    background-image: linear-gradient(to left, wheat,whitesmoke );
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+}
