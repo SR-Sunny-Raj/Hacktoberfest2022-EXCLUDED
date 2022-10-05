@@ -1,0 +1,17 @@
+Learn Hardware and Networking - These things are the main tiers to learn penetration testing, since Penetration testing deals majorly with networking {And partially with the hardware}. So as a reason you must have to learn these things in depth to keep footprints in this sector
+    Operating System and System Architecture- Operating Systems and System Architecture plays a key role in penetration testing. The system operation deals with x86 (32 - bit) and x64 (64 - bit) architecture, and also you must have to know about various operating systems such as Windows, Linux, BSD, Mac, Solaris, Unix etc which can help you out to track the systems while you make port scanning in penetration testing methodology.
+    Coding, Web Development, Server side & Client Side Scripting - These 4 things also plays a result in penetration testing, where you will use these 4 things to write security programs or exploits to conduct a penetration testing on the target, writing security patches and minimizing the vulnerability or risk factor of a software / server / network
+
+After learning these things, the penetration testing method is given below:
+
+1. Gathering Information / Reconnaissance - This is the main part to gather information about the firm, Firm’s website address & it’s IP Address, Name servers, Mail Exchangers, The network topology, FTP Protocol users, Using advanced searches using google dorks, bing dorks to get the entire information about servers etc. Along with this, the person who conducts this penetration testing method, gathers info about the server working location and who had developed it. The following snapshots shows how we gather the information.
+2.  Vulnerability Assessment - In this sector you will get to know, how a vulnerability has been exposed in the server, say I’ll use Recon - ng, Nikto, Golismero, Uniscan and Wapiti Vulnerability Scanner for Web Server Vulnerability Scanning. And also along with this you must have to use some tools such as tripwire, reverse engineering tools such as hex, objdump and debuggers such as gdb (Gnome Debugger) in Linux and Immunity Debugger in Windows, You can also find Security vulnerabilities in Softwares also. In addition to this, for vulnerability assessment you can use wmap vulnerability scanner plugin in metasploit, manually finding the security flaws and finding DNS Zone Transfer Misconfiguration flaw in server. The below figure shows how to find vulnerability in a server.
+3. Exploitation: This is the method that shows you, how a exploit can trigger a vulnerability. I.E. a multi/http/tomcat_mgr_deploy exploit triggers vulnerability located in a server and a netapi exploit triggers a vulnerability present in Windows XP.
+
+4. Post - Exploitation: This method will show you, what you want to do after a successful compromise of a target machine.
+
+5. Clearing Tracks - After the work of post exploitation is done, you need to clear the tracks. For example: If you had exploited a server, then you need to type “clearev” or else “run event_manager -c” to clear the logs after a successful target.
+
+6. Report Writing - After completion of all the above procedures, you need to write a report for the company regarding, how the countermeasures must be taken for to avoid a cyber attacks.
+
+... Recon - ng, Nikto, Golismero, Uniscan and Wapiti Vulnerability Scanner for Web Server Vulnerability Scanning
