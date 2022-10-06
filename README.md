@@ -1,4 +1,4 @@
-### Repository EXCLUDED from Hacktoberfest. Please make your contribution in this repository -> https://github.com/SR-Sunny-Raj/Hacktoberfest2022-for-all
+### Repository EXCLUDED from Hacktoberfest. Please make your contribution in this repository -> https://github.com/SR-Sunny-Raj/Hacktoberfest2022-for-everyone
 <br>
 <br>
 
