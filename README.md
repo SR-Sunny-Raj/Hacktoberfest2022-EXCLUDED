@@ -1,3 +1,7 @@
+###Repository EXCLUDED from Hacktoberfest. Please make your contribution in this repository -> https://github.com/SR-Sunny-Raj/Hacktoberfest2022-for-all
+<br>
+<br>
+
 ![image](https://uno-website-assets.s3.amazonaws.com/wp-content/uploads/2022/09/28094927/Uno_HackFest22_Hero_V1-1024x395.jpg)
 
 <h1 align="center"> Hacktoberfest 2022 </h1>
